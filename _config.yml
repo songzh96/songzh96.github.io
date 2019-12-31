@@ -1,0 +1,117 @@
+# Site settings
+title: Songzh
+SEOTitle: songzh的博客 | songzh Blog
+header-img: img/home-bg-he.png
+email: 986758232@qq.com
+description: "集中一点，登峰造极"
+keyword: "songzh, songzh Blog, songzh的博客, knx, node-red, crestron, homebridge, modbus"
+url: "http://songzh.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/songzh96/songzh96.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "皮皮皮皮皮皮卡丘~"
+sidebar-avatar: /img/Avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+# weibo_username:     qiubaiying
+zhihu_username:     song-zhou-xing
+github_username:    songzh96
+# facebook_username:  baiying.qiu.7
+jianshu_username:   5f3bc3f23ee9
+twitter_username:   songzh96
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# plugins
+# from PR#40, to support local preview for Jekyll 3.0
+plugins: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: songzh
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: d551a8db57564bd149e2                            #生成的clientID
+  clientSecret: aa735942fd1b74794fb31be46982082ea7b78524    #生成的clientSecret
+  repo: songzh.github.io    #仓库名称
+  owner: songzh96    #github用户名
+  admin: songzh
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: c6f18f47d57bb8ee4cbcb72088a69047
+
+# Google Analytics
+ga_track_id: 'UA-155197980-1'            # Format: UA-xxxxxx-xx
+ga_domain: songzh.tech               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "Google",
+        href: "https://www.google.com.hk/"
+    },{
+        title: "简书·songzh",
+        href: "https://www.jianshu.com/u/5f3bc3f23ee9"
+    },{
+        title: "KNX",
+        href: "https://www.knx.org/knx-en/for-professionals/index.php"
+    },{
+        title: "Github",
+        href: "https://github.com/"
+    },{
+        title: "百度",
+        href: "https://www.baidu.com/"
+    }
+]
